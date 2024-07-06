@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -19,13 +19,10 @@ body{
 .header{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #EAEBED;
   padding: 0 2rem;
   height: 6rem;
-}
-.header-logo{
-  flex: 1;
 }
 .logo{
   width: 4.5rem;
@@ -43,5 +40,46 @@ body{
   text-decoration: none;
 }
 h3{
+  font-size: 1.75rem;
+}
+.nav-item a h3{
+  color: #6e7981;
+  transition: font-size 0.4s ease, letter-spacing 0.4s ease;
+  transform-origin: center;
+  
+}
+.nav-item a:hover h3{
+  color: #030303;
+  transform: scale(1.25);
+  letter-spacing: 1.25px;
+}
+
+.about-me-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4em 16em;
+}
+.about-me-title{
   color: #0B0909;
+  font-size: 3.5rem;
+  margin-bottom: -0.2em;
+  text-decoration: underline;
+}
+
+.about-me-text{
+  color: #0B0909;
+}
+.profile{
+  width: 16rem;
+  border-radius: 50%;
+}
+.skills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons{
+  padding-left: 2em;
+  width: 5.5rem;
 }
