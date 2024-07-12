@@ -53,14 +53,16 @@ h3{
   transform: scale(1.25);
   letter-spacing: 1.25px;
 }
-
+.hero-section{
+  background-color: #F5F5F5;
+}
 .about-me-container{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 4em 16em;
 }
-.about-me-title, .project-head-title{
+.about-me-title, .project-head-title, .contact-title{
   color: #0B0909;
   font-size: 3.5rem;
   margin-bottom: -0.2em;
@@ -82,7 +84,6 @@ h3{
   align-items: center;
   justify-content: center;
   padding: 2em 16em;
-  margin-bottom: 2rem;
 }
 .icons{
   padding-left: 2em;
@@ -141,4 +142,28 @@ h3{
 }
 .project-link a:hover{
   color: #030303;
+}
+.contact-section{
+  padding: 2em 16em;
+  background-color: #F5F5F5;
+}
+.contact-title-box{
+  margin-bottom: 1.5rem;
+}
+.contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+.contact-box a{
+  font-size: 1.8rem;
+  color: #434240;
+}
+.contact-box a:hover{
+  color: #07040A;
+}
+.contact-icon{
+  font-size: 2rem;
+  margin-right: 10px;
 }
