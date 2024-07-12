@@ -1,5 +1,5 @@
 :root {
-  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -60,7 +60,7 @@ h3{
   justify-content: center;
   padding: 4em 16em;
 }
-.about-me-title{
+.about-me-title, .project-head-title{
   color: #0B0909;
   font-size: 3.5rem;
   margin-bottom: -0.2em;
@@ -70,6 +70,9 @@ h3{
 .about-me-text{
   color: #0B0909;
 }
+.about-me-profile{
+  padding-left: 4rem;
+}
 .profile{
   width: 16rem;
   border-radius: 50%;
@@ -78,8 +81,64 @@ h3{
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2em 16em;
+  margin-bottom: 2rem;
 }
 .icons{
   padding-left: 2em;
   width: 5.5rem;
+}
+.project-section{
+  padding: 2em 16em;
+  background-color: #EAEBED;
+}
+.projects-list{
+  margin-bottom: 1rem;
+}
+
+.project-head-title{
+  color: #0B0909;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
+}
+.project-container{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+.project-image{
+  width: 450px;
+  height: 400px;
+}
+.proj-image{
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.project-details{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+  margin-left: 48px;
+  padding-bottom: 2vh;
+}
+.project-title{
+  font-size: 2.4rem;
+}
+.project-link-icon{
+  font-size: 1.5rem;
+}
+.project-link-text{
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: -1.8px;
+}
+.project-link a{
+  color: #6e7981;
+}
+.project-link a:hover{
+  color: #030303;
 }
