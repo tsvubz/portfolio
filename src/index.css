@@ -94,7 +94,11 @@ h3{
   background-color: #EAEBED;
 }
 .projects-list{
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 4rem;
 }
 
 .project-head-title{
@@ -105,13 +109,16 @@ h3{
 }
 .project-container{
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 5rem;
-  margin-top: 2rem;
+  justify-content: center;
+  width: 300px;
+  height: 600px;
+  margin-bottom: 2rem;
 }
 .project-image{
-  width: 450px;
-  height: 400px;
+  width: 220px;
+  height: 240px;
 }
 .proj-image{
   width: 100%;
@@ -121,10 +128,9 @@ h3{
 .project-details{
   display: flex;
   flex-direction: column;
-  text-align: right;
-  align-items: flex-end;
-  margin-left: 48px;
-  padding-bottom: 2vh;
+  text-align: center;
+  align-items: center;
+  height: 300px;
 }
 .project-title{
   font-size: 2.4rem;
@@ -166,4 +172,46 @@ h3{
 .contact-icon{
   font-size: 2rem;
   margin-right: 10px;
+}
+.footer-container{
+  padding: 2em 16em;
+  background-color: #EAEBED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-icon-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.footer-icon{
+  font-size: 2rem;
+  color: #434240;
+}
+.footer-box{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-box p{
+  font-size: 0.8rem;
+}
+.footer-box a{
+  color: #6e7981;
+}
+.footer-box a:hover{
+  color: #0B0909;
+}
+.footer-text{
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -1.8px;
+  padding-left: 2px;
+  padding-right: 4px;
+}
+.footer-box-icon{
+  font-size: 1.4rem;
 }
