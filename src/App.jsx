@@ -1,9 +1,9 @@
 
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import ProjectsList from './components/ProjectsList'
+import Navbar from "./components/organisms/Navbar"
+
+
+
+
 
 function App() {
   
@@ -11,10 +11,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <ProjectsList />
-      <Contact />
-      <Footer />
     </>
   )
 }
