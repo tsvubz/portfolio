@@ -1,36 +1,42 @@
-import styled from "styled-components"
+
+import styles from './Flex.module.css'
 import PropTypes from 'prop-types'
-import { AlignItems, FlexDirection, JustifyContent } from '../../styles'
 
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: ${({ direction }) => direction || FlexDirection.ROW };
-    justify-content: ${({ justify }) => justify || JustifyContent.CENTER};
-    align-items: ${({ align }) => align || AlignItems.CENTER };
-    gap: ${({ gap }) => gap || '0'};
-    height: ${({ height }) => height || '4rem'};
-    width: 100%;
-    margin: 0;
-`
+function Flex({ children, alignItems, flexDirection, justifyContent, gap, height, ...props }) {
 
-function Flex({ children, direction, justify, align, gap, height }) {
+  const flexStyle = {
+    alignItems: alignItems,
+    flexDirection: flexDirection,
+    justifyContent: justifyContent,
+    gap: gap,
+    height: height,
+  }
+
   return (
     <>
-        <Container direction={direction} justify={justify} align={align} gap={gap} height={height}>
-            {children}
-        </Container> 
+        <div className={styles.flex} style={flexStyle} {...props}>
+          {children}
+        </div> 
     </>
   )
 }
 
 Flex.propTypes = {
-    children: PropTypes.node,
-    direction: PropTypes.string,
-    justify: PropTypes.string,
-    align: PropTypes.string,
-    gap: PropTypes.string,
-    height: PropTypes.string,
+  children: PropTypes.node,
+  alignItems: PropTypes.string,
+  flexDirection: PropTypes.string,
+  justifyContent: PropTypes.string,
+  gap: PropTypes.string,
+  height: PropTypes.string,
+}
+
+Flex.propTypes = {
+  alignItems: 'center',
+  flexDirection: 'center',
+  justifyContent: 'center',
+  gap: '0rem',
+  height: '0rem',
 }
 
 export default Flex

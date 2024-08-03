@@ -1,0 +1,11 @@
+.grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+    grid-template-rows: auto;
+    gap: 4rem;
+    column-gap: initial;
+    row-gap: initial;
+    
+}
