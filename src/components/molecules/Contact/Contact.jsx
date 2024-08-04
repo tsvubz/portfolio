@@ -7,7 +7,7 @@ import Link from '../../atoms/Link/Link'
 
 function Contact() {
   return (
-    <section className={styles.section}>
+    <section className={styles.contact} id='contact'>
         <Flex flexDirection='column' gap='0.5rem' alignItems='start'>
             <h2 className={styles.title}>Contact Me</h2>
             <Link href='mailto:tsvubure@gmail.com' className={styles.link} >

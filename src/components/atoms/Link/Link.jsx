@@ -6,9 +6,6 @@ import styles from './Link.module.css'
 function Link({ children, href, ...props }) {
 
 
-
-  
-
   return (
     <>
       <a className={styles.link} href={href} {...props}>
