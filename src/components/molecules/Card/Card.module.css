@@ -1,0 +1,11 @@
+.image{
+    width: 300px;
+    border-radius: var(--border-radius-large);
+}
+.title{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.text{
+    text-align: center;
+}

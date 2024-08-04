@@ -14,10 +14,10 @@ function Footer() {
                 <Link className={styles.link} href='https://github.com/tsvubz' target='_blank'>
                     <FaGithub />
                 </Link>
-                <Link className={styles.link} href="https://www.linkedin.com/in/terence-svubure/">
+                <Link className={styles.link} href="https://www.linkedin.com/in/terence-svubure/" target='_blank'>
                     <FaLinkedin />
                 </Link>
-                <Link className={styles.link} href="mailto:tsvubure@gmail.com">
+                <Link className={styles.link} href="mailto:tsvubure@gmail.com" target='_blank'>
                     <FaEnvelope />
                 </Link>
             </Flex>
@@ -25,12 +25,11 @@ function Footer() {
                 <p>&copy; {currentYear} Terence Svubure. All rights reserved.</p>
                 <Link href='https://github.com/tsvubz' target='_blank'>
                     <FaGithub />
-                    <span className='footer-text'>Checkout The Source Code</span>
+                    Checkout The Source Code
                     <FaArrowAltCircleUp />
                 </Link>
             </Flex>
-        </Flex>
-        
+        </Flex> 
     </footer>
   )
 }

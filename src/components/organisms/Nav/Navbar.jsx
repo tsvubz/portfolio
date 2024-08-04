@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav className={styles.nav}>
       <Flex height='8rem' gap='4rem'>
-        <Link>
+        <Link href='#about'>
           About me
           <FaUserTie />  
         </Link>
@@ -18,7 +18,7 @@ function Navbar() {
           Projects
           <FaLaptop />
         </Link>
-        <Link>
+        <Link href='#contact'>
           Contact
           <FaEnvelope />
         </Link>
