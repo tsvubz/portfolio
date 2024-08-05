@@ -1,16 +1,17 @@
 
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowAltCircleUp} from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa"
 import styles from './Footer.module.css'
 import Flex from "../../atoms/Flex/Flex";
 import Link from "../../atoms/Link/Link";
+import Container from "../../atoms/Container/Container";
 
 function Footer() {
 
     const currentYear = new Date().getFullYear();
   return (
-    <footer className={styles.footer}>
+    <Container>
         <Flex flexDirection='column' gap='2rem'>
-            <Flex gap='8rem'>
+            <Flex className={styles.links}>
                 <Link className={styles.link} href='https://github.com/tsvubz' target='_blank'>
                     <FaGithub />
                 </Link>
@@ -22,15 +23,14 @@ function Footer() {
                 </Link>
             </Flex>
             <Flex flexDirection='column'>
-                <p>&copy; {currentYear} Terence Svubure. All rights reserved.</p>
-                <Link href='https://github.com/tsvubz' target='_blank'>
+                <p className={styles.footertext}>&copy; {currentYear} Terence Svubure. All rights reserved.</p>
+                <Link className={styles.footerlink} href='https://github.com/tsvubz' target='_blank'>
                     <FaGithub />
                     Checkout The Source Code
-                    <FaArrowAltCircleUp />
                 </Link>
             </Flex>
         </Flex> 
-    </footer>
+    </Container>
   )
 }
 

@@ -3,14 +3,14 @@ export default [
         id: 1,
         imageUrl: "blackjack.jpg",
         title: "Black Jack",
-        text: "Game of Black Jack",
+        text: "Game of Black Jack. Used Vanilla Javascript, HTML and CSS to make this game of Black Jack",
         link: "https://github.com/tsvubz/blackjack_game",
     },
     {
         id: 2,
         imageUrl: "travel.jpg",
         title: "Travel Journal",
-        text: "Simple travel journal of the places I have visited. Travel Journal created using React",
+        text: "Simple travel journal of the places I have visited. Travel Journal blog made using React",
         link: "https://github.com/tsvubz/travel-journal",
     },
     {
