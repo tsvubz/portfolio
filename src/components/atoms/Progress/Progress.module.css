@@ -1,0 +1,24 @@
+.progressContainer {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--color-background-light);
+  border-radius: var(--border-radius-small);
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .progressContainer {
+    height: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .progressContainer {
+    height: 0.3rem;
+  }
+}
