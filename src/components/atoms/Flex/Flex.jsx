@@ -36,7 +36,6 @@ Flex.propTypes = {
   flexDirection: 'center',
   justifyContent: 'center',
   gap: '0rem',
-  height: '0rem',
 }
 
 export default Flex

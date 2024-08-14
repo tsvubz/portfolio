@@ -11,20 +11,20 @@ function Footer() {
   return (
     <Container>
         <Flex flexDirection='column' gap='2rem'>
-            <Flex className={styles.links}>
-                <Link className={styles.link} href='https://github.com/tsvubz' target='_blank'>
+            <Flex gap='8rem'>
+                <Link href='https://github.com/tsvubz' target='_blank' fontSize='2.5rem'>
                     <FaGithub />
                 </Link>
-                <Link className={styles.link} href="https://www.linkedin.com/in/terence-svubure/" target='_blank'>
+                <Link href="https://www.linkedin.com/in/terence-svubure/" target='_blank' fontSize='2.5rem'>
                     <FaLinkedin />
                 </Link>
-                <Link className={styles.link} href="mailto:tsvubure@gmail.com" target='_blank'>
+                <Link href="mailto:tsvubure@gmail.com" target='_blank' fontSize='2.5rem'>
                     <FaEnvelope />
                 </Link>
             </Flex>
             <Flex flexDirection='column'>
                 <p className={styles.footertext}>&copy; {currentYear} Terence Svubure. All rights reserved.</p>
-                <Link className={styles.footerlink} href='https://github.com/tsvubz' target='_blank'>
+                <Link href='https://github.com/tsvubz/portfolio' target='_blank' letterSpacing='-1.5px' gap='0rem'>
                     <FaGithub />
                     Checkout The Source Code
                 </Link>
