@@ -16,7 +16,7 @@ function Card({ item }) {
         <p className={styles.text}>{item.text}</p>
       </Flex>
       <Flex justifyContent="flex-start" className={styles.footer}>
-        <Link href={item.link} target='_blank'>
+        <Link href={item.link} target='_blank' letterSpacing='-1.5px' gap='0rem'>
           <FaGithub />
           Source Code
         </Link>

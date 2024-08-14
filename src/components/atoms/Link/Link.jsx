@@ -3,12 +3,19 @@ import styles from './Link.module.css'
 
 
 
-function Link({ children, href, ...props }) {
+function Link({ children, href, marginRight, letterSpacing, gap, fontSize, ...props }) {
 
+
+  const linkStyle = {
+    marginRight: marginRight,
+    letterSpacing: letterSpacing,
+    gap: gap,
+    fontSize: fontSize,
+  }
 
   return (
     <>
-      <a className={styles.link} href={href} {...props}>
+      <a className={styles.link} style={linkStyle} href={href} {...props}>
         {children}
       </a>
     </>
@@ -17,6 +24,10 @@ function Link({ children, href, ...props }) {
 
 Link.propTypes = {
     href: PropTypes.string,
+    marginRight: PropTypes.string,
+    letterSpacing: PropTypes.string,
+    gap: PropTypes.string,
+    fontSize: PropTypes.string,
     children: PropTypes.node,
   };
 

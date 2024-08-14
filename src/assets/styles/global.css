@@ -49,8 +49,8 @@
     --font-size-p-xlarge: 3.5rem;
     --font-size-p-large: 3rem;
     --font-size-p-mid: 2.5rem;
-    --font-size-p-small: 2rem;
-    --font-size-p-xsmall: 1.5rem;
+    --font-size-p-small: 1rem;
+    --font-size-p-xsmall: 0.75rem;
   
     /* FONT - WEIGHT */
     --font-weight-ultralight: 100;

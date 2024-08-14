@@ -7,10 +7,12 @@
     gap: 0.5rem;
     color: var(--color-secondary-white);
     text-decoration: none;
-
+    margin-right: 0;
+    letter-spacing: 0;
+    font-size: var(--font-size-p-small);
 }
 
 .link:hover {
-    color: var(--color-primary-white);
+    color: var(--color-primary);
     cursor: pointer;
 }

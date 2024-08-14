@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Container({ children, paddingTop, ...props }) {
 
     const containerStyle = {
-        paddingTop: paddingTop,
+      paddingTop: paddingTop,
     }
 
   return (
