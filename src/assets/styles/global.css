@@ -1,31 +1,8 @@
 :root {
-    /* CONTENT MAX WIDTH */
-    --content-max-width: 186rem;
-  
-    /* NAV HEADER HEIGHT */
-    --nav-header-height: 10rem;
   
     /* BORDER RADIUS */
     --border-radius-small: 0.5rem;
     --border-radius-large: 1rem;
-  
-    /* SECTION MARGIN - LEFT, RIGHT */
-    --section-margin-horizontal-desktop: 10rem;
-    --section-margin-horizontal-tablet: 4rem;
-    --section-margin-horizontal-mobile: 2rem;
-    --section-margin-horizontal: var(--section-margin-horizontal-desktop);
-  
-    /* SECTION MARGIN - TOP, BOTTOM */
-    --section-margin-vertical-desktop: 10rem;
-    --section-margin-vertical-tablet: 5rem;
-    --section-margin-vertical-mobile: 5rem;
-    --section-margin-vertical: var(--section-margin-vertical-desktop);
-  
-    /* SECTION CONTENT MARGIN - TOP, BOTTOM */
-    --section-content-margin-vertical-desktop: 8rem;
-    --section-content-margin-vertical-tablet: 4rem;
-    --section-content-margin-vertical-mobile: 4rem;
-    --section-content-margin-vertical: var(--section-content-margin-vertical-desktop);
   
     /* GAP GRID */
     --gap-grid--desktop: 4rem;
@@ -60,8 +37,6 @@
     /* COLORS - TEXT */
     --color-text-primary: var(--color-primary-white);
     --color-text-secondary: var(--color-secondary-white);
-    --color-text-disabled: var(--color-secondary-white);
-    --color-text-disabled-dark: var(--color-disabled);
     --color-text-dark: var(--color-secondary-black);
     --color-text-highlight: var(--color-primary);
     --color-text-tertiary: #6c7a79;
@@ -197,52 +172,4 @@
   
   textarea {
     resize: none;
-  }
-  
-  /* TABLET */
-  .Tablet {
-    /* SECTION MARGIN - LEFT, RIGHT */
-    --section-margin-horizontal: var(--section-margin-horizontal-tablet);
-  
-    /* SECTION MARGIN - TOP, BOTTOM */
-    --section-margin-vertical: var(--section-margin-vertical-tablet);
-  
-    /* SECTION CONTENT MARGIN - TOP, BOTTOM */
-    --section-content-margin-vertical: var(--section-content-margin-vertical-tablet);
-  
-    /* FONT - SIZE */
-    --font-size-h1: 7rem;
-    --font-size-h2: 6rem;
-    --font-size-h3: 4.5rem;
-    --font-size-h4: 4rem;
-    --font-size-h5: 3rem;
-    --font-size-p-xlarge: 2.5rem;
-    --font-size-p-large: 2.5rem;
-    --font-size-p-mid: 2rem;
-  }
-  
-  /* MOBILE */
-  .Mobile {
-    /* GAP GRID */
-    --gap-grid: var(--gap-grid--mobile);
-  
-    /* SECTION MARGIN - LEFT, RIGHT */
-    --section-margin-horizontal: var(--section-margin-horizontal-mobile);
-  
-    /* SECTION MARGIN - TOP, BOTTOM */
-    --section-margin-vertical: var(--section-margin-vertical-mobile);
-  
-    /* SECTION CONTENT MARGIN - TOP, BOTTOM */
-    --section-content-margin-vertical: var(--section-content-margin-vertical-mobile);
-  
-    /* FONT - SIZE */
-    --font-size-h1: 5.5rem;
-    --font-size-h2: 4.5rem;
-    --font-size-h3: 3.5rem;
-    --font-size-h4: 3.5rem;
-    --font-size-h5: 3rem;
-    --font-size-p-xlarge: 2.5rem;
-    --font-size-p-large: 2.5rem;
-    --font-size-p-mid: 2rem;
-  }
-  
+  } 

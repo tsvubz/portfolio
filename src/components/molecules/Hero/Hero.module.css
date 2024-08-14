@@ -28,6 +28,12 @@
     width: 400px;
     border-radius: var(--border-radius-large);
 }
+.cursor{
+  margin-left: 4px;
+  color: var(--color-secondary-white);
+  font-size: 2rem;
+  font-weight: 500;
+}
 
 @media (max-width: 768px) {
     .heroFlex {
@@ -47,7 +53,7 @@
       font-size: 3rem;
     }
   
-    .h3 {
+    .h3, .cursor {
       font-size: 1.6rem;
     }
   
@@ -65,7 +71,7 @@
       font-size: 2.5rem;
     }
   
-    .h3 {
+    .h3, .cursor {
       font-size: 1.4rem;
     }
   
