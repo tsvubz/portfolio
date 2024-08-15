@@ -17,8 +17,8 @@ function Hero() {
 
   return (
     <Container paddingTop='8rem'>
-        <Flex className={styles.heroFlex}> 
-            <Flex className={styles.textContent}>
+        <Flex> 
+            <Flex flexDirection='column'>
               <p className={styles.p}>Hi I&apos;m</p>
               <h1 className={styles.h1}>Terence Svubure</h1>
               <Flex>
@@ -26,7 +26,7 @@ function Hero() {
                 {!isTyping && <span className={styles.cursor}>|</span>}
               </Flex>
             </Flex>
-            <Flex className={styles.imageContent}> 
+            <Flex> 
               <img className={styles.img} src={heroImage} alt=""/>
             </Flex>
         </Flex>

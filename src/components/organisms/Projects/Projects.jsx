@@ -18,7 +18,7 @@ function Projects() {
   return (
     <Container id='projects'>
       <h2 className={styles.title}>{("Projects").toUpperCase()}</h2>
-      <Grid columns={{ sm: 1, md: 2, lg: 3 }}>
+      <Grid columns={{ sm: 1, md: 2, lg: 3 }} rowGap='1.5rem' columnGap='1.5rem' alignItems='start'>
         {items}
       </Grid>
     </Container> 

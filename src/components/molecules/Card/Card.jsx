@@ -7,7 +7,7 @@ import Flex from '../../atoms/Flex/Flex';
 
 function Card({ item }) {
   return (
-    <Grid className={styles.card}>
+    <Grid gridTemplateRows='auto 1fr auto' gridTemplateColumns='auto' gap='1rem' alignItems='start'>
       <div className={styles.imageContainer}>
         <img src={`../../images/${item.imageUrl}`} alt="" className={styles.image}/>
       </div>
@@ -15,7 +15,7 @@ function Card({ item }) {
         <h3 className={styles.title}>{item.title}</h3>
         <p className={styles.text}>{item.text}</p>
       </Flex>
-      <Flex justifyContent="flex-start" className={styles.footer}>
+      <Flex className={styles.footer}>
         <Link href={item.link} target='_blank' letterSpacing='-1.5px' gap='0rem'>
           <FaGithub />
           Source Code
