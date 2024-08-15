@@ -1,15 +1,3 @@
-.heroFlex {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-}
-.textContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .p{
     font-size: 1.6rem;
 }
@@ -36,15 +24,6 @@
 }
 
 @media (max-width: 768px) {
-    .heroFlex {
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-  
-    .textContent {
-      text-align: center;
-    }
-  
     .p {
       font-size: 1.4rem;
     }
