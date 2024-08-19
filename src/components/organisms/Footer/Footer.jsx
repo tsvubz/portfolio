@@ -11,7 +11,7 @@ function Footer() {
   return (
     <Container>
         <Flex flexDirection='column' gap='2rem'>
-            <Flex gap='8rem'>
+            <Flex mobileDirection='row' tabletDirection='row' gap='8rem'>
                 <Link href='https://github.com/tsvubz' target='_blank' fontSize='2.5rem'>
                     <FaGithub />
                 </Link>

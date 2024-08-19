@@ -2,13 +2,17 @@
 import PropTypes from 'prop-types';
 import styles from './Button.module.css'
 
-function Button({ children, onClick, ...props }) {
+function Button({ children, ...props }) {
+
+  function handleClick(){
+    window.open('../../../../public/documents/Resume for Terence Svubure.pdf', '_blank');
+  }
   
   return (
     <>
       <button
         className={styles.button}
-        onClick={onClick}
+        onClick={handleClick}
         {...props}
         >
           {children}

@@ -5,7 +5,7 @@ import styles from './About.module.css'
 function About() {
   return (
     <Container id='about'>
-      <Flex flexDirection='column' alignItems='start'>
+      <Flex flexDirection='column' alignItems='start' textAlign='justify'>
         <h2 className={styles.title}>{("About Me").toUpperCase()}</h2>
         <p className={styles.text}>
           I am a versatile and dedicated developer with a solid foundation in both front-end and back-end technologies.

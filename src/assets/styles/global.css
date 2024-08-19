@@ -64,16 +64,29 @@
   
     /* OUTLINE STYLE */
     --outline-style-focus: 1px var(--color-focus-outline) solid;
-  
-    /* BORDER STYLE */
-    --border-primary: 1px var(--color-primary) solid;
-    --border-secondary: 1px var(--color-secondary) solid;
-    --border-secondary-light: 1px var(--color-secondary-light) solid;
-  
-    /* BOX SHADOW */
-    --box-shadow-small: 0 1 2 -1 rgba(0, 0, 0, 0.25);
-    --box-shadow-medium: 0 6 4 -4 rgba(0, 0, 0, 0.25);
-    --box-shadow-large: -4 8 8 -4 rgba(0, 0, 0, 0.25);
+
+      /* SECTION MARGIN - LEFT, RIGHT */ 
+  --section-margin-horizontal-desktop: 10rem;
+  --section-margin-horizontal-tablet: 4rem;
+  --section-margin-horizontal-mobile: 2rem;
+  --section-margin-horizontal: var(--section-margin-horizontal-desktop);
+
+  /* SECTION MARGIN - TOP, BOTTOM */
+  --section-margin-vertical-desktop: 10rem;
+  --section-margin-vertical-tablet: 5rem;
+  --section-margin-vertical-mobile: 5rem;
+  --section-margin-vertical: var(--section-margin-vertical-desktop);
+
+  /* SECTION CONTENT MARGIN - TOP, BOTTOM */
+  --section-content-margin-vertical-desktop: 8rem;
+  --section-content-margin-vertical-tablet: 4rem;
+  --section-content-margin-vertical-mobile: 4rem;
+  --section-content-margin-vertical: var(--section-content-margin-vertical-desktop);
+
+  /* GAP GRID */
+  --gap-grid--desktop: 4rem;
+  --gap-grid--mobile: 3rem;
+  --gap-grid: var(--gap-grid--desktop);
 
     color-scheme: light dark;
     font-synthesis: none;
@@ -173,3 +186,51 @@
   textarea {
     resize: none;
   } 
+
+  /* TABLET */
+.Tablet {
+  /* SECTION MARGIN - LEFT, RIGHT */
+  --section-margin-horizontal: var(--section-margin-horizontal-tablet);
+
+  /* SECTION MARGIN - TOP, BOTTOM */
+  --section-margin-vertical: var(--section-margin-vertical-tablet);
+
+  /* SECTION CONTENT MARGIN - TOP, BOTTOM */
+  --section-content-margin-vertical: var(--section-content-margin-vertical-tablet);
+
+  /* FONT - SIZE */
+  /* FONT - SIZE */
+  --font-size-h1: 3.5rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1rem;
+  --font-size-p-xlarge: 0.75rem;
+  --font-size-p-large: 0.5rem;
+  --font-size-p-mid: 0.3rem;
+}
+
+/* MOBILE */
+.Mobile {
+  /* GAP GRID */
+  --gap-grid: var(--gap-grid--mobile);
+
+  /* SECTION MARGIN - LEFT, RIGHT */
+  --section-margin-horizontal: var(--section-margin-horizontal-mobile);
+
+  /* SECTION MARGIN - TOP, BOTTOM */
+  --section-margin-vertical: var(--section-margin-vertical-mobile);
+
+  /* SECTION CONTENT MARGIN - TOP, BOTTOM */
+  --section-content-margin-vertical: var(--section-content-margin-vertical-mobile);
+
+  /* FONT - SIZE */
+  --font-size-h1: 3.5rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1rem;
+  --font-size-p-xlarge: 0.75rem;
+  --font-size-p-large: 0.5rem;
+  --font-size-p-mid: 0.3rem;
+}
