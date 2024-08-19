@@ -18,7 +18,7 @@ function Tech() {
   return (
     
     <Container>
-        <Grid gridTemplateRows='auto 1fr' gap='4rem'>
+        <Grid gridTemplateRows='auto auto auto' rowGap='1rem' columnGap='1.5rem'>
             {items}
         </Grid>
     </Container>

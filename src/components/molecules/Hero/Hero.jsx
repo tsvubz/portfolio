@@ -21,7 +21,7 @@ function Hero() {
             <Flex flexDirection='column'>
               <p className={styles.p}>Hi I&apos;m</p>
               <h1 className={styles.h1}>Terence Svubure</h1>
-              <Flex>
+              <Flex mobileDirection='row' tabletDirection='row'>
                 <h3 className={styles.h3}>{displayText}</h3>
                 {!isTyping && <span className={styles.cursor}>|</span>}
               </Flex>
