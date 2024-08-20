@@ -1,11 +1,13 @@
 
 import PropTypes from 'prop-types';
 import styles from './Button.module.css'
+import pdf from '../../../../public/documents/ResumeTerenceSvubure.pdf'
 
 function Button({ children, ...props }) {
 
   function handleClick(){
-    window.open('../../../../public/documents/Resume for Terence Svubure.pdf', '_blank');
+    console.log(pdf)
+    window.open(pdf, '_blank');
   }
   
   return (
