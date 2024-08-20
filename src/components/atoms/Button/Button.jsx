@@ -6,7 +6,6 @@ import pdf from '../../../../public/documents/ResumeTerenceSvubure.pdf'
 function Button({ children, ...props }) {
 
   function handleClick(){
-    console.log(pdf)
     window.open(pdf, '_blank');
   }
   
