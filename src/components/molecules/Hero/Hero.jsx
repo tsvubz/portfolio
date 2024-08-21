@@ -17,11 +17,11 @@ function Hero() {
 
   return (
     <Container paddingTop='8rem'>
-        <Flex> 
+        <Flex mobileDirection='column' tabletDirection='row'> 
             <Flex flexDirection='column'>
               <p className={styles.p}>Hi I&apos;m</p>
               <h1 className={styles.h1}>Terence Svubure</h1>
-              <Flex mobileDirection='row' tabletDirection='row'>
+              <Flex height='3rem' mobileDirection='row' tabletDirection='row'>
                 <h3 className={styles.h3}>{displayText}</h3>
                 {!isTyping && <span className={styles.cursor}>|</span>}
               </Flex>
