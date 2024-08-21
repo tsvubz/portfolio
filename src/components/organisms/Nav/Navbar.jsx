@@ -21,15 +21,15 @@ function Navbar() {
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </div>
         <div className={`${styles.menuItems} ${isMenuOpen ? styles.showMenu : ''}`}>
-          <Link marginRight='8rem' href='#about'>
+          <Link href='#about'>
             About me
             <FaUserTie />  
           </Link>
-          <Link marginRight='8rem' href='#projects'>
+          <Link href='#projects'>
             Projects
             <FaLaptop />
           </Link>
-          <Link marginRight='8rem' href='#contact'>
+          <Link href='#contact'>
             Contact
             <FaEnvelope />
           </Link>
